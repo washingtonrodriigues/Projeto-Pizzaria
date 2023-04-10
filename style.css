@@ -34,7 +34,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: 10s ease-in 1s infinite reverse both running slidein;
+    animation: 15s ease-in 1s infinite reverse both running slidein;
 }
 
 @keyframes slidein{
@@ -131,4 +131,50 @@ nav > ul{
 
 #divHeaderText a{
     padding: 30px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+section > h2{
+    font-family: 'Metropolis ExtraBold';
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+section > p{
+    font-family: 'Metropolis Regular';
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 50px;
+}
+
+#section-products-content > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 40% 80px;
+    height: 70px;
+}
+
+#products-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.products{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.products > img{
+    width: 350px;
 }
