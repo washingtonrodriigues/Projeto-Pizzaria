@@ -1,6 +1,14 @@
 @font-face {
-    font-family: 'Metropolis';
+    font-family: 'Metropolis Regular';
+    src: url(fontes/Metropolis-Regular.otf) format(opentype);
+}
+@font-face {
+    font-family: 'Metropolis Bold';
     src: url(fontes/Metropolis-Bold.otf) format(opentype);
+}
+@font-face {
+    font-family: 'Metropolis ExtraBold';
+    src: url(fontes/Metropolis-ExtraBold.otf) format(opentype);
 }
 
 *{
@@ -10,14 +18,35 @@
 }
 
 body{
-    font-family: 'Metropolis';
+    font-family: 'Metropolis Bold';
+    overflow-x: hidden;
 }
 
 #header-offer{
     background-color: #ffbe31;
     text-align: center;
     font-size: 1.2rem;
-    padding: 20px;
+    height: 50px;
+}
+
+#header-offer > p{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: 10s ease-in 1s infinite reverse both running slidein;
+}
+
+@keyframes slidein{
+    0%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
 }
 
 header{
@@ -63,4 +92,43 @@ nav > ul{
 .orderOnlineBtn:hover{
     background-color: #1b1b2e;
     color: white;
+}
+
+#div-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#divHeaderImg{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#img-header{
+    width: 70%;
+    margin-left: 500px;
+}
+
+#divHeaderText{
+    position: absolute;
+    width: 700px;
+    margin: -150px 0 0 -440px;
+}
+
+#divHeaderText h1{
+    font-family: 'Metropolis ExtraBold';
+    font-size: 5.5rem;
+    margin-bottom: 30px;
+}
+
+#divHeaderText p{
+    font-family: 'Metropolis Regular';
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+#divHeaderText a{
+    padding: 30px;
 }
