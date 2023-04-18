@@ -82,6 +82,28 @@ nav > ul{
     color: black;
 }
 
+li > i{
+    background-color: transparent;
+    color: white;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+li > span{
+    font-family: sans-serif;
+    position: absolute;
+    margin-left: -15px;
+    margin-top: -15px;
+    font-size: 1.4rem;
+    background-color: #ffbe31;
+    color: #1b1b2e;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
 .orderOnlineBtn{
     text-decoration: none;
     color: black;
