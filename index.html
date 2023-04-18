@@ -9,6 +9,26 @@
     <script src="https://kit.fontawesome.com/e4726fe170.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="models">
+        <div class="pizza-item">
+            <a href="">
+                <div class="pizza-item--img"><img src=""></div>
+                <div class="pizza-item--add">+</div>
+            </a>
+            <div class="pizza-item--name">--</div>
+            <div class="pizza-item--desc">--</div>
+            <div class="pizza-item--price">R$ --</div>
+        </div>
+    </div>
+    <div class="cart-item">
+        <img src="">
+        <div class="cart--item-name">--</div>
+        <div class="cart--item-qtarea">
+            <button class="cart--item-qtmenos">-</button>
+            <div class="cart--item-qt">1</div>
+            <button class="cart--item-qtmais">+</button>
+        </div>
+    </div>
     <header>
         <div id="header-offer">
             <p>IMPERDÍVEL! RODÍZIO DE PIZZAS APENAS R$ 39,90 POR PESSOA!</p>
@@ -20,7 +40,6 @@
                 <li><a href="#" class="links-navbar">CARDÁPIO</a></li>
                 <li><a href="#" class="links-navbar">CONTATO</a></li>
                 <li><a href="#" class="links-navbar">SOBRE NÓS</a></li>
-                <li><i class="fa-solid fa-cart-shopping"></i><span>0</span></li>
                 <a href="#" class="orderOnlineBtn">FAÇA SEU PEDIDO</a>
             </ul>   
         </nav>
@@ -73,78 +92,96 @@
         <section id="third-content">
             <h2>Navegue pelo nosso cardápio</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus temporibus iste ab cum fugiat excepturi esse dolorum, atque delectus quos ea magni tenetur itaque beatae, blanditiis sapiente porro saepe a?</p>
-            <div id="div-menu">
-                <div class="flavors">
-                    <div><img src="images/cardapio/pizzasuprema.png" alt="pizza-suprema"></div>
-                    <h3>Pizza Suprema</h3>
-                    <span>R$ 49,90</span>
-                </div>
-                <div class="flavors">
-                    <div><img src="images/cardapio/pizzadefrango.png" alt="pizza-frango-churrasco"></div>
-                    <h3>Pizza de Frango Churrasco</h3>
-                    <span>R$ 44,90</span>
-                </div>
-                <div class="flavors">
-                    <div><img src="images/cardapio/pizzahavaiana.png" alt="pizza-havaiana"></div>
-                    <h3>Pizza Havaiana</h3>
-                    <span>R$ 39,90</span>
-                </div>
-                <div class="flavors">
-                    <div><img src="images/cardapio/pizzavegetariana.png" alt="pizza-vegetariana"></div>
-                    <h3>Pizza Vegetariana</h3>
-                    <span>R$ 35,90</span>
-                </div>
-                <div class="flavors">
-                    <div><img src="images/cardapio/pizzacalabresa.png" alt="pizza-calabresa"></div>
-                    <h3>Pizza de Calabresa</h3>
-                    <span>R$ 35,90</span>
-                </div>
-                <div class="flavors">
-                    <div><img src="images/cardapio/pizzadecarne.png" alt="pizza-carne"></div>
-                    <h3>Pizza de Carne</h3>
-                    <span>R$ 44,90</span>
-                </div>
-                <div class="flavors">
-                    <div><img src="images/cardapio/pizzadequeijo.png" alt="pizza-queijo"></div>
-                    <h3>Pizza de Queijo</h3>
-                    <span>R$ 40,90</span>
-                </div>
-                <div class="flavors">
-                    <div><img src="images/cardapio/pizzabufalo.png" alt="pizza-bufalo"></div>
-                    <h3>Pizza Búfalo</h3>
-                    <span>R$ 40,90</span>
-                </div>
-            </div>
+            <div class="pizza-area"></div>
         </section>
-        <section>
-            <div>
+        <section id="fourth-content">
+            <div id="fourthContent-divText">
                 <h2>Venha saborear as melhores pizzas de Aracaju</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa assumenda in, unde excepturi cum, autem aperiam nesciunt natus iste rem qui. Et harum laudantium, ipsum nesciunt obcaecati beatae nulla optio.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum facere explicabo fugiat illo totam! Repellendus!</p>
                 <a href="#" class="orderOnlineBtn">FAÇA SEU PEDIDO</a>
             </div>
-            <div><img src="images/pizzasection.jpg" alt="wallpaper"></div>
+            <div id="fourthContent-divImg"><img src="images/pizzasection.jpg" alt="wallpaper"></div>
         </section>
     </main>
-    <footer>
-        <div>
-            <img src="images/logo2.png" alt="logo">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, cupiditate amet! Dignissimos quia, consectetur et suscipit sint cum assumenda dolorum accusantium voluptatum! Incidunt nihil necessitatibus dolorem, ipsum eligendi voluptas velit!</p>
-            <div>
-                <img src="images/icons/facebook.png" alt="facebook">
-                <img src="images/icons/instagram.png" alt="instagram">
-                <img src="images/icons/whatsapp.png" alt="whatsapp">
-                <img src="images/icons/twitter.png" alt="twitter">
+    <aside>
+        <div class="cart-area">
+            <div class="menu-closer">❌</div>
+            <h1>Suas Pizzas</h1>
+            <div class="cart"></div>
+            <div class="cart-details">
+                <div class="totalItem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="totalItem desconto">
+                    <span>Desconto</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalItem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--finalizar">Finalizar a compra</div>
             </div>
         </div>
-        <div>
-            <h3>Páginas</h3>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+    </aside>
+    <div class="pizzaWindowArea">
+        <div class="pizzaWindowBody">
+            <div class="pizzaInfo--cancelMobileButton">Voltar</div>
+            <div class="pizzaBig">
+                <img src="" />
+            </div>
+            <div class="pizzaInfo">
+                <h1>--</h1>
+                <div class="pizzaInfo--desc">--</div>
+                <div class="pizzaInfo--sizearea">
+                    <div class="pizzaInfo--sector">Tamanho</div>
+                    <div class="pizzaInfo--sizes">
+                        <div data-key="0" class="pizzaInfo--size">PEQUENA <span>--</span></div>
+                        <div data-key="1" class="pizzaInfo--size">MÉDIA <span>--</span></div>
+                        <div data-key="2" class="pizzaInfo--size selected">GRANDE <span>--</span></div>
+                    </div>
+                </div>
+                <div class="pizzaInfo--pricearea">
+                    <div class="pizzaInfo--sector">Preço</div>
+                    <div class="pizzaInfo--price">
+                        <div class="pizzaInfo--actualPrice">R$ --</div>
+                        <div class="pizzaInfo--qtarea">
+                            <button class="pizzaInfo--qtmenos">-</button>
+                            <div class="pizzaInfo--qt">1</div>
+                            <button class="pizzaInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizzaInfo--addButton">Adicionar ao carrinho</div>
+                <div class="pizzaInfo--cancelButton">Cancelar</div>
+            </div>
         </div>
-        <p>&copy; Copyright - Pizza Gourmet | Desenvolvido por <a href="#">Washington Rodrigues</a></p>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="first">
+                <img src="images/logo2.png" alt="logo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat, quis suscipit voluptatum earum voluptate?</p>
+                <div class="socialMedias">
+                    <img src="images/icons/facebook.png" alt="facebook" class="socialMediasFooter">
+                    <img src="images/icons/instagram.png" alt="instagram" class="socialMediasFooter">
+                    <img src="images/icons/whatsapp.png" alt="whatsapp" class="socialMediasFooter">
+                    <img src="images/icons/twitter.png" alt="twitter" class="socialMediasFooter">
+                </div>
+            </div>
+            <div class="second">
+                <h3>Páginas</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; Copyright - Pizza Gourmet | Desenvolvido por <a href="https://github.com/rodrigueswashington" target="_blank">Washington Rodrigues</a></p>
     </footer>
+    <script src="js/pizzas.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
