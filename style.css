@@ -31,6 +31,7 @@ body{
     text-align: center;
     font-size: 1.2rem;
     height: 50px;
+    overflow-x: hidden;
 }
 
 #header-offer > p{
@@ -496,6 +497,10 @@ li > a{
 
 /* FIM DO THIRD-CONTENT */
 
+#fourth-content{
+    height: 700px;
+}
+
 #fourthContent-divText{
     display: flex;
     flex-direction: column;
@@ -504,14 +509,18 @@ li > a{
     background-color: #d32f2f;
     color: white;
     padding: 30px;
+    width: 600px;
 }
 
 #fourthContent-divImg{
-    width: 700px;
+    width: 800px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #fourthContent-divImg img{
-    height: 100%;
+    height: 101%;
+    width: 115%;
 }
 
 #fourthContent-divText h2{
@@ -594,4 +603,205 @@ footer p > a{
 
 footer p > a:hover{
     text-decoration: underline;
+}
+
+@media (max-width: 1150px) {
+    #divHeaderText{
+        position: relative;
+        margin: 0;
+        left: 20px;
+        width: 460px;
+    }
+
+    #divHeaderText h1{
+        font-size: 4rem;
+    }
+
+    #divHeaderImg{
+        width: 650px;
+    }
+
+    #divHeaderImg img{
+        margin: 0;
+        width: 100%;
+    }
+
+    .products > img{
+        width: 300px;  
+    }
+
+    #second-content{
+        height: 600px;
+    }
+
+    #secondContent-divImg > img{
+        height: 100%;
+    }
+
+    #fourth-content{
+        height: 600px;
+    }
+
+    #fourthContent-divText h2{
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 930px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav > img{
+        width: 400px;
+    }
+
+    nav > ul{
+        width: 100vw;
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+
+    #div-header{
+        height: 530px;
+    }
+
+    #divHeaderText{
+        width: 350px;
+    }
+
+    #divHeaderText h1{
+        font-size: 3rem;
+    }
+
+    #divHeaderText p{
+        width: 400px;
+    }
+
+    .products > img{
+        width: 250px;  
+    }
+
+    #section-products-content > a{
+        text-align: center;
+    }
+
+    #fourth-content{
+        height: 500px;
+    }
+
+    #fourthContent-divText{
+        padding: 20px;
+    }
+
+    #fourthContent-divText h2{
+        font-size: 3rem;
+    }
+
+    #fourthContent-divImg{
+        width: 850px;
+    }
+
+    #fourthContent-divImg img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .pizza-area {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 750px) {
+    #header-offer{
+        width: 100vw;
+    }
+    
+    #header-offer p{
+        width: 330px;
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+    
+    nav{
+        display: none;
+    }
+
+    #div-header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #divHeaderText{
+        width: 100vw;
+    }
+
+    #divHeaderText p{
+        width: 320px;
+        text-align: center;
+    }
+
+    #divHeaderImg{
+        width: 100vw;
+    }
+
+    #products-content{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .products img{
+        width: 200px;
+    }
+
+    .pizza-area {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content .first{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .first > p{
+        width: 300px;
+    }
+
+    .socialMedias{
+        width: 300px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .second > ul{
+        display: flex;
+        justify-content: space-between;
+        width: 280px;
+        margin-bottom: 0px;
+    }
+
+    footer > p{
+        font-family: 'Metropolis Regular';
+        font-size: 12px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .pizza-area {
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
