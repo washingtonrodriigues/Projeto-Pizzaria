@@ -29,3 +29,12 @@ pizzaJson.map((item, index) => {
         document.querySelector('.pizzaWindowArea').style.display = 'none'
     })
 })
+
+
+// FUNÇÃO PARA O MENU
+document.querySelector('.fa-solid').addEventListener('click', () => {
+    const ul = document.getElementById('ul')
+    const divHeader = document.getElementById('div-header')
+    ul.style.right = '0'
+    ul.style.zIndex = '3'
+})
