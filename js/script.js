@@ -34,7 +34,10 @@ pizzaJson.map((item, index) => {
 // FUNÇÃO PARA O MENU
 document.querySelector('.fa-solid').addEventListener('click', () => {
     const ul = document.getElementById('ul')
-    const divHeader = document.getElementById('div-header')
-    ul.style.right = '0'
-    ul.style.zIndex = '3'
+    const btn = document.querySelector('.fa-bars')
+    const x = document.querySelector('.fa-xmark')
+    ul.classList.toggle('activeClass')    
+    btn.classList.toggle('active')
+    x.classList.toggle('active')
 })
+

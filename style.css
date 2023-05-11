@@ -813,14 +813,18 @@ footer p > a:hover{
     nav > ul{
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         background-color: #000;
         height: 100vh;
         justify-content: start;
-        margin-top: 65px;
-        padding-top: 50px;
+        padding-top: 100px;
         transition: .3s;
         right: -380px;
+    }
+
+    .activeClass{
+        right: 0;
+        z-index: 3;
     }
 
     .fa-solid{
@@ -830,6 +834,21 @@ footer p > a:hover{
         position: absolute;
         right: 0;
         margin-top: 28px;
+        z-index: 4;
+        transition: .3s;
+    }
+
+    .fa-solid.fa-xmark{
+        display: none;
+    }
+
+    .fa-solid.fa-xmark.active{
+        display: flex;
+    }
+
+    .fa-bars.active{
+        transform: rotate(-45deg) translate(-8px, 8px);
+        opacity: 0;
     }
     
     #div-header{
@@ -882,9 +901,68 @@ footer p > a:hover{
         width: 200px;
         margin: 50px auto;
     }
+
+    #secondContent-divImg, #fourthContent-divImg{
+        display: none;
+    }
+
+    #secondContent-divText{
+        padding: 20px;
+    }
+
+    #secondContent-divText h2{
+        text-align: center;
+        font-size: 2.5rem;
+        padding-top: 40px;
+    }
+
+    #secondContent-divText p{
+        font-size: 14px;
+        padding: 0;
+    }
+
+    #secondContent-divText ul{
+        margin-bottom: 20px;
+    }
+
+    #secondContent-divText ul li{
+        font-size: 14px;
+    }
+
+    .links-secondContent{
+        display: flex;
+    }
+
+    .links-secondContent > i{
+        position: relative;
+        margin: 0;
+    }
+
+    #secondContent-divText > a{
+        margin: 0 auto;
+    }
     
     .pizza-area {
         display:grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    #fourth-content{
+        margin-bottom: -50px;
+    }
+
+    #fourthContent-divText{
+        height: 450px;
+    }
+
+    #fourthContent-divText h2{
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    #fourthContent-divText a{
+        margin: 0 auto;
+        width: 200px;
+        padding: 25px;
     }
 }
