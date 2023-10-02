@@ -17,8 +17,12 @@
     box-sizing: border-box;
 }
 
-.models, .cart-item, .cart-area, .fa-solid{
+.models, .cart-item, .cart-area, .fa-solid.fa-bars, .fa-solid.fa-xmark{
     display: none;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -827,7 +831,7 @@ footer p > a:hover{
         z-index: 3;
     }
 
-    .fa-solid{
+    .fa-solid.fa-bars, .fa-solid.fa-xmark{
         display: flex;
         background: transparent;
         color: white;
